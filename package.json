@@ -6,8 +6,8 @@
     "concurrently": "^9.1.0"
   },
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd backend && npm start",
-    "client": "cd frontend && npm run dev"
-  }
+  "start": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "cd backend && npm start",  // Assuming this starts your backend server
+  "client": "cd frontend && npm run dev" // Correctly using your existing frontend dev command
+}
 }
