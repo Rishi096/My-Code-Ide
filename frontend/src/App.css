@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0D0C0C;
+  color: #fff;
+  overflow-y: hidden;
+}
+body.light-mode {
+  background-color: #868181;
+  color: black;
+}
+html{
+  overflow-x: hidden;
+}
+
+.inputBox{
+  width: 100%;
+  background-color: #141414;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.inputBox input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  font-size: 16px ; 
+}
+
+.btn{
+  background-color: #0BAEEF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  
+}
+.btn:hover{
+  background-color: #108fbd;
+}
+
+.Link:hover{
+ color: #0BAEEF;
+}
+
+.inputB{
+  
+  background-color: #141414;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input{
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+
+.inputB input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  font-size: 16px ; 
+}
+.grid{
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px;
+  /* flex-direction: column; */
+}
+.btnblue{
+  background-color: #00AEEF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btnblue:hover{
+  background-color: #0086b3;
+}
