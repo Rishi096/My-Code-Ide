@@ -6,7 +6,7 @@
     "concurrently": "^9.1.0"
   },
   "scripts": {
-    "start": "npx concurrently \"npm run server\" \"npm run client\"",
+    "start": "npx concurrently \"npm run server\" \"npm run dev\"",
     "server": "cd backend && npm start",
     "client": "cd frontend && npm run dev"
   }
