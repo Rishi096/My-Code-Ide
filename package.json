@@ -4,6 +4,7 @@
     "express-generator": "^4.2.0"
   },
   "scripts": {
+    "postinstall": "npm install concurrently",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && npm start",
     "client": "cd frontend && npm run dev"
