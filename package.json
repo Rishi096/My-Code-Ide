@@ -6,8 +6,8 @@
   },
   "scripts": {
     "postinstall": "npm install concurrently",
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd backend && npm start",
-    "client": "cd frontend && npm run dev"
+    "start": "npx concurrently \"npm run server\" \"npm run client\"",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm run dev"
   }
 }
