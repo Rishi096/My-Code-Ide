@@ -5,9 +5,8 @@
     "express-generator": "^4.2.0"
   },
   "scripts": {
-    "postinstall": "npm install concurrently",
-    "start": "npx concurrently \"npm run server\" \"npm run client\"",
-    "backend": "cd backend && npm start",
-    "frontend": "cd frontend && npm run dev"
+    "server": "nodemon backend/app.js",
+    "start" : "node backend/app.js",
+    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend"
   }
 }
