@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/codeIDE");
+ mongoose.connect('mongodb://127.0.0.1:27017/codeIDE');
 
+// mongoose.connect('mongodb+srv://rishirajtiwari200002:1KOZs66F6i1hTQ1z@cluster0.tnc28.mongodb.net/codeIDE');
 const projectSchema = new mongoose.Schema({
   title: String,
   createdBy: String,
@@ -9,7 +10,6 @@ const projectSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-
   htmlCode: {
     type: String,
     default: `<!doctype html>
