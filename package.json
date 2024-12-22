@@ -6,6 +6,7 @@
   },
   "scripts": {
     "postinstall": "npm install concurrently",
+    "build": "echo 'No build step needed for the backend'",
     "start": "npx concurrently \"npm run backend\" \"npm run frontend\"",
     "backend": "cd backend && npm start",
     "frontend": "cd frontend && npm run dev"
