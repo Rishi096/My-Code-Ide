@@ -5,10 +5,9 @@
     "express-generator": "^4.2.0"
   },
   "scripts": {
-    "postinstall": "npm install concurrently",
     "build": "echo 'No build step needed for the backend'",
-    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "start": "npx concurrently \"npm run backend\" \"npm run frontend\"",
     "backend": "cd backend && npm start",
-    "frontend": "cd frontend && serve -s dist"
+    "frontend": "cd frontend && npx serve -s dist"
   }
 }
