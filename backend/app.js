@@ -9,7 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-
+  const __dirname = path.resolve();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -20,16 +20,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors());
 
-// Serve React static build
-app.use(express.static(path.join(__dirname, 'public')));
-
 // Backend routes
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+// Serve React static build
+app.use(express.static(path.join(__dirname, "/frontend/dist")));
 // Catch-all route to serve React frontend for unmatched routes
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, "frontend","dist", "index.html"));
 });
 
 // catch 404 and forward to error handler

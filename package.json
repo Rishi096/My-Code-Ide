@@ -2,12 +2,12 @@
   "dependencies": {
     "concurrently": "^9.1.0",
     "dotenv": "^16.4.7",
-    "express-generator": "^4.2.0"
+    "express-generator": "^4.2.0",
+    "nodemon": "^3.1.9"
   },
   "scripts": {
-    "build": "echo 'No build step needed for the backend'",
-    "start": "npx concurrently \"npm run backend\" \"npm run frontend\"",
-    "backend": "cd backend && npm start",
-    "frontend": "cd frontend && npx serve -s dist"
+    "dev": "nodemon backend/app.js",
+    "build": "npm install && npm install --prefix frontend && npm run build -- prefix frontend",
+    "start": "nodemon backend/app.js"
   }
 }
